@@ -1,0 +1,8 @@
+export const _search = document.querySelector('.search')
+export const _form = document.querySelector('.form')
+export const _button = document.querySelector('.button')
+export const _list = document.querySelector('.list')
+export const _like = document.querySelector('.like')
+export const _modal = document.querySelector('.modal')
+export const _modal_list = document.querySelector('.modal__list')
+export const _backIcon = document.querySelector('.back_icon')

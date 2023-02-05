@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- STYLE -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style/style.css">
+
+    <!-- SCRIPT -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js" integrity="sha512-rpLlll167T5LJHwp0waJCh3ZRf7pO6IT1+LZOhAyP6phAirwchClbTZV3iqL3BMrVxIYRbzGTpli4rfxsCK6Vw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./script/index.js" type="module" defer></script>
+
+    <!-- TITLE -->
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/1169/1169608.png" type="image/x-icon">
+    <title>Pokemon</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <img src="./images/logo.svg" alt="pokemon logo" class="logo">
+            <button class="like">
+                <i class="fa-regular fa-heart"></i>
+            </button>
+            
+
+            <form class="form">
+                <select class="type_select" name="type">
+                    <option value="type">Type</option>
+                    <option value="fire">Fire</option>
+                    <option value="grass">Grass</option>
+                    <option value="electric">Electric</option>
+                    <option value="water">Water</option>
+                    <option value="ground">Ground</option>
+                    <option value="rock">Rock</option>
+                    <option value="fairy">Fairy</option>
+                    <option value="poison">Poison</option>
+                    <option value="bug">Bug</option>
+                    <option value="dragon">Dragon</option>
+                    <option value="psychic">Psychic</option>
+                    <option value="flying">Flying</option>
+                    <option value="fighting">Fighting</option>
+                    <option value="normal">Normal</option>
+                </select>
+
+                <input type="text" class="search" placeholder="search..." name="search">
+
+                <select class="alphabet_select" name="sort">
+                    <option value="filter">Filter</option>
+                    <option value="az">Aa-Zz</option>
+                    <option value="za">Zz-Aa</option>
+                </select>
+
+                <button class="button">Search</button>
+            </form>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container">
+            <ul class="list"></ul>
+        </div>
+    </main>
+
+    <div class="modal">
+        <div class="modal__content">
+            <button class="back_icon">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+
+            <ul class="modal__list"> </ul>
+        </div>
+    </div>
+</body>
+
+</html>
